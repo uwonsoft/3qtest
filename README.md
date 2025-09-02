@@ -12,8 +12,38 @@
 
 ## 사용 기술
 
-* **Rust**: 서버 사이드 로직 및 백엔드 개발
-* **Dioxus**: UI 및 프론트엔드 개발 (Rust 기반의 React와 유사한 프레임워크)
+* 웹 개발 (Rust + WebAssembly)
+     Rust는 WebAssembly(Wasm)으로 컴파일할 수 있어, 웹 브라우저에서 네이티브 수준의 성능을 낼 수 있습니다.
+
+🔹 주요 기술 스택
+Rust: 성능과 메모리 안전성을 제공
+WebAssembly (Wasm): Rust 코드를 브라우저에서 실행 가능
+Wasm-bindgen: Rust와 JavaScript 상호작용 도구
+Yew / Leptos / Dioxus: Rust 기반의 프론트엔드 프레임워크
+Trunk: Rust 웹앱 번들링 도구
+🔹 개발 방법
+Rust를 WebAssembly로 컴파일
+JavaScript 또는 TypeScript로 Wasm과 연동
+Yew, Leptos 같은 Rust 프레임워크 활용
+💡 Rust 기반의 웹 UI 프레임워크 (Yew, Leptos, Dioxus)를 사용하면 React와 비슷한 방식으로 웹 개발 가능!
+
+2. 하이브리드 앱 개발 (Rust + WebView)
+Rust를 활용해 하이브리드 앱을 만들 수도 있습니다. Electron이나 Tauri 같은 프레임워크를 활용하면 됩니다.
+
+🔹 주요 기술 스택
+Tauri: Rust 기반의 경량 데스크톱/모바일 앱 프레임워크
+Wry: WebView를 활용한 Rust 기반 네이티브 앱 개발
+Dioxus (with Tauri): Rust 기반 UI 개발
+🔹 개발 방법
+Tauri 사용 → Web 기술(HTML, CSS, JS)과 Rust를 조합
+Wry 사용 → WebView로 Rust 기반 네이티브 UI 개발
+Rust + WebAssembly 조합하여 성능 최적화
+💡 Tauri는 Electron보다 가볍고 빠르며, Rust의 성능을 활용할 수 있음!
+
+3. Rust + WebAssembly + Tauri 조합
+프론트엔드: Rust(Yew, Leptos) + WebAssembly
+백엔드 / 네이티브 기능: Rust (Tauri, Axum, Actix 등)
+데스크톱 및 모바일 하이브리드 앱: Tauri
 
 ## 프로젝트 구조
 
