@@ -12,8 +12,8 @@
 
 ## 사용 기술
 
-* 웹 개발 (Rust + WebAssembly)
-     Rust는 WebAssembly(Wasm)으로 컴파일할 수 있어, 웹 브라우저에서 네이티브 수준의 성능을 낼 수 있습니다.
+🔹 웹 개발 (Rust + WebAssembly)
+* Rust는 WebAssembly(Wasm)으로 컴파일할 수 있어, 웹 브라우저에서 네이티브 수준의 성능을 낼 수 있습니다.
 
 🔹 주요 기술 스택  
 * Server: Ubuntu 22.04.4 LTS  
