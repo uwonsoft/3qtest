@@ -20,8 +20,40 @@
 * WebServer : Docker
    ```bash
    // Docker 설치
+   
    // 0. 기존 Docker 제거 (에러가 난다면, 그냥 무시하십쇼)
    sudo apt-get remove docker docker-engine docker.io containerd runc
+
+   // 1. 패키지 업데이트
+   sudo apt-get update
+
+   // 2. 필수 패키지 설치
+   sudo apt-get install apt-transport-https ca-certificates curl software-properties-common
+
+   // 3. Docker 공식 GPG 키 추가
+   curl -fsSL [https://download.docker.com/linux/ubuntu/gpg](https://download.docker.com/linux/ubuntu/gpg) | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+
+   // 4. Docker 저장소 추가
+   echo "deb \[arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg\] [https://download.docker.com/linux/ubuntu](https://download.docker.com/linux/ubuntu) $(lsb\_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+   // 5. 다시 패키지 업데이트
+   sudo apt-get update
+
+   // 6. Docker 및 관련 패키지 설치
+   // (막 어떤 서비스를 restart할 거냐고 묻는 화면이 뜨면, 걍 다 스페이스바 눌러서 선택(*로 만들기)하세요)
+   sudo apt-get install docker-ce docker-ce-cli containerd.io
+
+   // 7. Docker 설치 확인
+   // (에러가 발생하지 않고, Docker version ~라고 뜨면 성공!)
+   // (만약 에러가 발생한다면, 죄송합니다 ... 다른 블로그를 참고해보셔요 ...!)
+   sudo docker --version
+
+   // 추가1. Docker 서비스 상태 확인
+   sudo systemctl start docker
+
+   // 추가2. Docker 서비스 실행
+   (서버를 껐다 켜면, Docker를 다시 실행해줘야 하더라구요~)
+   sudo systemctl status docker
    ```
    
   
