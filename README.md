@@ -17,7 +17,15 @@
 
 🔹 주요 기술 스택  
 * Server : Ubuntu 22.04.4 LTS  
-* WebServer : Docker  
+* WebServer : Docker
+   ```bash
+   // Docker 설치
+   // 0. 기존 Docker 제거 (에러가 난다면, 그냥 무시하십쇼)
+   sudo apt-get remove docker docker-engine docker.io containerd runc
+   ```
+   
+  
+
 Rust: 성능과 메모리 안전성을 제공
 WebAssembly (Wasm): Rust 코드를 브라우저에서 실행 가능
 Wasm-bindgen: Rust와 JavaScript 상호작용 도구
