@@ -46,6 +46,16 @@
    // (만약 에러가 발생한다면, 죄송합니다 ... 다른 블로그를 참고해보셔요 ...!)   
    // 현재 버전은 Docker version 28.4.0, build d8eb465   
    sudo docker --version
+
+   // 8. Docker Compose 설치
+   // 도커 컴포즈는 단일 서버에서 여러개의 컨테이너를 하나의 서비스로 정의해 컨테이너의 묶음으로 관리할 수 있는 작업 환경을 제공하는 관리 도구입니다.
+   sudo curl -L "https://github.com/docker/compose/releases/download/v2.39.3/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+   // 9. Docker Compose 실행 권한 주기
+   sudo chmod +x /usr/local/bin/docker-compose
+
+   // 10. Docker Compose 버전 확인
+   docker-compose -v
    
    // 추가1. Docker 서비스 상태 확인
    sudo systemctl status docker   
