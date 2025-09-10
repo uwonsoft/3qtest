@@ -48,11 +48,11 @@
    sudo docker --version
    
    // 추가1. Docker 서비스 상태 확인
-   sudo systemctl start docker
+   sudo systemctl status docker   
 
    // 추가2. Docker 서비스 실행
    (서버를 껐다 켜면, Docker를 다시 실행해줘야 하더라구요~)
-   sudo systemctl status docker
+   sudo systemctl start docker
    ```
    
   
