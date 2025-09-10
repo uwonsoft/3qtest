@@ -19,8 +19,6 @@
 * Server : Ubuntu 22.04.4 LTS  
 * WebServer : Docker
    ```bash
-   // Docker 설치
-   
    // 0. 기존 Docker 제거 (에러가 난다면, 그냥 무시하십쇼)
    sudo apt-get remove docker docker-engine docker.io containerd runc
 
@@ -45,9 +43,10 @@
 
    // 7. Docker 설치 확인
    // (에러가 발생하지 않고, Docker version ~라고 뜨면 성공!)
-   // (만약 에러가 발생한다면, 죄송합니다 ... 다른 블로그를 참고해보셔요 ...!)
+   // (만약 에러가 발생한다면, 죄송합니다 ... 다른 블로그를 참고해보셔요 ...!)   
+   // 현재 버전은 Docker version 28.4.0, build d8eb465   
    sudo docker --version
-
+   
    // 추가1. Docker 서비스 상태 확인
    sudo systemctl start docker
 
