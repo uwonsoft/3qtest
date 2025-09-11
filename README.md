@@ -17,7 +17,7 @@
 
 🔹 주요 기술 스택  
 * Server : Ubuntu 22.04.4 LTS  
-* WebServer : Docker
+* WebServer : Docker + nginx   
    ```bash
    // 0. 기존 Docker 제거 (에러가 난다면, 그냥 무시하십쇼)
    sudo apt-get remove docker docker-engine docker.io containerd runc
@@ -63,6 +63,12 @@
    // 추가2. Docker 서비스 실행
    (서버를 껐다 켜면, Docker를 다시 실행해줘야 하더라구요~)
    sudo systemctl start docker
+   ```
+
+   ```bash
+   // nginx 설치
+   // docker에 있는 이미지를 가져와 설치한다.
+   // nginx는 공개용 이미지이기 때문에 docker에 로그인 없이 진행이 가능하다.
    ```
    
   
