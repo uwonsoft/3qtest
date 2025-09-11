@@ -69,6 +69,21 @@
    // nginx 설치
    // docker에 있는 이미지를 가져와 설치한다.
    // nginx는 공개용 이미지이기 때문에 docker에 로그인 없이 진행이 가능하다.
+
+   // nginx 이미지 다운로드   
+   sudo docker pull nginx
+
+   // 이미지가 제대로 다운로드 됐는지 확인
+   sudo docker images
+
+   // nginx 실행
+   sudo docker container run --name nginxserver -d -p 80:80 nginx
+      --name은 컨테이너의 이름 지정
+      -d는 백그라운드 실행
+      -p는 포트 설정
+
+   // 컨테이너 실행 확인
+   sudo docker ps
    ```
    
   
