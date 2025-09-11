@@ -77,13 +77,17 @@
    sudo docker images
 
    // nginx 실행
-   sudo docker container run --name nginxserver -d -p 80:80 nginx
+   sudo docker container run --name webserver -d -p 80:80 nginx
       --name은 컨테이너의 이름 지정
       -d는 백그라운드 실행
       -p는 포트 설정
 
    // 컨테이너 실행 확인
    sudo docker ps
+
+   // 이후, nginx 정지 및 실행
+   sudo docker stop webserver
+   sudo docker start webserver
    ```
    
   
