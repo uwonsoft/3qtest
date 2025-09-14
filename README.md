@@ -90,7 +90,9 @@
    sudo docker start webserver
    ```
 
-* FrontEnd : Svelte
+* FrontEnd : Svelte   
+  [Svelte 시작하기 - Web 개발 학습하기 - MDN](https://developer.mozilla.org/ko/docs/Learn_web_development/Core/Frameworks_libraries/Svelte_getting_started)   
+  [Svelte 공식 튜토리얼](https://svelte.dev/tutorial/svelte/welcome-to-svelte)
   
   
 
