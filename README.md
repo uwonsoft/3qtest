@@ -92,8 +92,28 @@
 
 * FrontEnd : Svelte   
   [Svelte 시작하기 - Web 개발 학습하기 - MDN](https://developer.mozilla.org/ko/docs/Learn_web_development/Core/Frameworks_libraries/Svelte_getting_started)   
-  [Svelte 공식 튜토리얼](https://svelte.dev/tutorial/svelte/welcome-to-svelte)
-  
+  [Svelte 공식 튜토리얼](https://svelte.dev/tutorial/svelte/welcome-to-svelte)   
+  - Svelte를 사용하려면 [Node.js](https://nodejs.org/ko)가 설치되어 있어야 합니다. 장기 지원(LTS) 버전을 사용하는 것이 좋습니다.
+       - NVM(Node Version Manager)을 이용한 설치 (권장)   
+         이 방법은 여러 버전의 Node.js를 쉽게 설치하고 전환할 수 있어 개발 환경 관리에 유리합니다.
+
+         NVM 설치 스크립트 다운로드 및 실행
+         ```
+         curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+         ```
+         터미널 재시작
+         Node.js 설치
+         ```
+         // 최신 안정화 버전
+         nvm install node
+         // or 특정버전
+         nvm install 18
+         ```
+         설치 확인
+         ```
+         node -v
+         npm -v
+         ```
   
 
 Rust: 성능과 메모리 안전성을 제공
